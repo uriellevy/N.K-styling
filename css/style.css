@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+:root {
+  --primary-color: rgba(255, 255, 255, 0.8);
+}
+
+body {
+  font-family: "Koh Santepheap", cursive;
+  overflow-x: hidden;
+}
+
+/* ************** */
+/* HEADINGS */
+/* ************** */
+
+h1 {
+  font-size: 4rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.6rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.6rem;
+  padding: 1rem;
+  text-align: center;
+}
+p {
+  font-size: 1.5rem;
+}
+
+/* ************** */
+/* HEADER */
+/* ************** */
+
+.header {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)),
+    url(/img/header/header-1.jpg) no-repeat center center/cover fixed;
+  height: 100vh;
+  z-index: -1;
+}
+
+.full-nav {
+  height: 10rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  transition: 0.5s ease;
+}
+
+.full-nav.sticky {
+  background: rgba(0, 0, 0, 0.5);
+  height: 8rem;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 2.4rem;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 1rem;
+}
+
+nav {
+  background-color: rgba(34, 41, 70, 0.295);
+  padding: 20px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); */
+  transition: width 0.6s linear;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  right: 4rem;
+  z-index: 5;
+}
+
+nav.active {
+  width: 350px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 0;
+  transition: width 0.6s linear;
+}
+
+nav.active ul {
+  width: 100%;
+}
+
+nav ul li {
+  transform: rotateY(0deg);
+  opacity: 0;
+  transition: transform 0.6s linear, opacity 0.6s linear;
+}
+
+nav.active ul li {
+  opacity: 1;
+  transform: rotateY(360deg);
+}
+
+nav ul a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1.6rem;
+}
+
+.icon {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  height: 30px;
+  width: 30px;
+}
+
+.icon .line {
+  background-color: #5290f9;
+  height: 2px;
+  width: 20px;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  transition: transform 0.6s linear;
+}
+
+.icon .line2 {
+  top: auto;
+  bottom: 10px;
+}
+
+nav.active .icon .line1 {
+  transform: rotate(-765deg) translateY(5.5px);
+}
+
+nav.active .icon .line2 {
+  transform: rotate(765deg) translateY(-5.5px);
+}

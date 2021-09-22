@@ -1,0 +1,6 @@
+/* mobile */
+@media (max-width: 540px) {
+  .logo {
+    display: none;
+  }
+}
