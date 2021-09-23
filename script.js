@@ -10,5 +10,5 @@ toggle.addEventListener("click", function () {
 /////sticky navbar
 const nav2 = document.querySelector(".full-nav");
 window.addEventListener("scroll", function () {
-  nav2.classList.toggle("sticky", window.scrollY > 900);
+  nav2.classList.toggle("sticky", window.scrollY > 600);
 });

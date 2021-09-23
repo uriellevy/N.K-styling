@@ -4,3 +4,27 @@
     display: none;
   }
 }
+
+/* contact */
+@media (max-width: 950px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .contact-info,
+  .contact-form {
+    margin: 3rem 5rem;
+  }
+
+  .contact-form h2 {
+    font-size: 3rem;
+  }
+
+  .contact-form .text-box {
+    width: 100%;
+  }
+
+  .contact-form .form .text-box:first-child {
+    margin-bottom: 2rem;
+  }
+}
