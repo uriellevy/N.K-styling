@@ -60,7 +60,7 @@ p {
 }
 
 .full-nav.sticky {
-  background: rgba(113, 61, 148, 0.9);
+  background: rgba(75, 53, 90, 0.9);
   height: 8rem;
   z-index: 10;
   color: #000;
@@ -160,6 +160,46 @@ nav.active .icon .line1 {
 
 nav.active .icon .line2 {
   transform: rotate(765deg) translateY(-5.5px);
+}
+
+/* ************** */
+/* GALLERY */
+/* ************** */
+
+#gallery {
+  margin: 2rem 0;
+  padding: 0;
+  background: url("https://images.unsplash.com/photo-1475257026007-0753d5429e10?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fHJhaW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60")
+    no-repeat center center/cover fixed;
+}
+
+.gallery-container {
+  max-width: 760px;
+  margin: auto;
+  border: #fff solid 3px;
+  background: #fff;
+}
+
+.main-img img,
+.imgs img {
+  width: 100%;
+}
+
+.imgs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+/* fade i nanimation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in 1 forwards;
 }
 
 /* ************** */
