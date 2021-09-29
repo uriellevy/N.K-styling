@@ -40,3 +40,20 @@ function imgClick(e) {
   //change opacity
   e.target.style.opacity = opacity;
 }
+
+//////animation
+
+window.addEventListener("scroll", reveal);
+
+function reveal() {
+  const reveal = document.querySelector(".reveal");
+  const windowHeight = window.innerHeight;
+  const revealPoint = 150;
+  const revealTop = reveal.getBoundingClientRect().top;
+
+  if (revealTop < windowHeight - revealPoint) {
+    reveal.classList.add("active");
+  } else {
+    reveal.classList.remove("active");
+  }
+}

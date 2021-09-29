@@ -9,6 +9,7 @@
 
 :root {
   --primary-color: rgba(255, 255, 255, 0.8);
+  --secondary-color: rgba(34, 41, 70, 0.295);
 }
 
 body {
@@ -41,6 +42,30 @@ p {
 }
 
 /* ************** */
+/* UTILITIES */
+/* ************** */
+
+.btn {
+  background-color: var(--secondary-color);
+  text-decoration: none;
+  color: #fff;
+  font-size: 2.4rem;
+  border: 2px solid transparent;
+  width: 20rem;
+  border-radius: 15px;
+  padding: 0.5rem 0;
+  margin: 1.5rem 0;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: transparent;
+  border: 2px solid #5290f9;
+
+  color: #5290f9;
+}
+
+/* ************** */
 /* HEADER */
 /* ************** */
 
@@ -49,6 +74,10 @@ p {
     url(/img/header/header-1.jpg) no-repeat center center/cover fixed;
   height: 100vh;
   z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .full-nav {
@@ -73,6 +102,7 @@ p {
   top: 50%;
   transform: translateY(-50%);
   padding: 1rem;
+  font-style: italic;
 }
 
 nav {
@@ -162,6 +192,68 @@ nav.active .icon .line2 {
   transform: rotate(765deg) translateY(-5.5px);
 }
 
+/* header contant */
+.header-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 8px;
+  margin: 20rem 0 0 5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+/* ************** */
+/* ABOUT */
+/* ************** */
+
+#about {
+  /* background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/img/header/background-3.jfif) no-repeat center center/cover fixed; */
+  background: url("/img/header/background-3.jfif") no-repeat center center/cover
+    fixed;
+  position: relative;
+  padding: 6rem 0 4rem;
+  margin: 2rem 0;
+  height: 80vh;
+}
+
+.about-container {
+  /* position: relative; */
+  /* background-color: #333; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about h2 {
+  color: #fff;
+  padding: 3rem 0 5rem 0;
+}
+
+#about p {
+  color: #fff;
+  /* background-color: #333; */
+  font-size: 2rem;
+  font-style: italic;
+  max-width: 60rem;
+  padding: 5rem 0 0 0;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
 /* ************** */
 /* GALLERY */
 /* ************** */
@@ -169,8 +261,8 @@ nav.active .icon .line2 {
 #gallery {
   margin: 2rem 0;
   padding: 0;
-  background: url("https://images.unsplash.com/photo-1475257026007-0753d5429e10?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fHJhaW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60")
-    no-repeat center center/cover fixed;
+  background: url("/img/header/background-3.jfif") no-repeat center center/cover
+    fixed;
 }
 
 .gallery-container {
@@ -178,6 +270,18 @@ nav.active .icon .line2 {
   margin: auto;
   border: #fff solid 3px;
   background: #fff;
+}
+
+.main-img {
+  position: relative;
+}
+
+.main-img h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  font-style: italic;
 }
 
 .main-img img,
@@ -189,6 +293,16 @@ nav.active .icon .line2 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 5px;
+}
+
+.gallery-container .img {
+  position: relative;
+}
+
+.gallery-container .img h6 {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
 }
 
 /* fade i nanimation */
@@ -327,4 +441,27 @@ nav.active .icon .line2 {
 
 .contact-form .send-btn:hover {
   background: #0582e3;
+}
+
+/* ************** */
+/* FOOTER */
+/* ************** */
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 2.4rem;
+  background-color: #333;
+  color: #f4f4f4;
+}
+
+.copyright {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
 }

@@ -16,14 +16,14 @@
     <!-- HEADER -->
     <header class="header" id="home">
       <div class="full-nav">
-        <label for="logo" class="logo">N.K-styling</label>
+        <label for="logo"><a class="logo" href="#home">N.K-styling</a></label>
 
         <nav class="active" id="nav">
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Works</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
           <button class="icon" id="toggle">
             <div class="line line1"></div>
@@ -32,17 +32,36 @@
         </nav>
       </div>
 
-      <!-- <div class="header-content">
-        <h1>Welcome to Eco-Ballena Hostel</h1>
-        <h3>The perfect place for nature lovers!</h3>
-        <a href="#contact" class="btn">Book Now</a>
-      </div> -->
+      <div class="header-content">
+        <h1>Noy Kimelman</h1>
+        <h3>Professional Stylist</h3>
+        <a href="#contact" class="btn">Contact</a>
+      </div>
     </header>
+
+    <section id="about">
+      <div class="about-container reveal">
+        <h2 class="what-header">About Me</h2>
+        <div class="text-about">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+            corrupti tenetur exercitationem, expedita cupiditate sed vitae
+            quisquam possimus nulla reprehenderit molestias, et dicta, odio vero
+            qui. Totam assumenda ab earum obcaecati laborum accusantium tenetur
+            similique culpa. Voluptate eos, expedita odit esse quae fuga
+            placeat, laborum perferendis blanditiis pariatur dolor quisquam
+            delectus voluptatem! Quae ipsam at ab possimus tempora quasi
+            maiores!
+          </p>
+        </div>
+      </div>
+    </section>
 
     <section id="gallery">
       <div class="gallery-container">
         <div class="main-img">
           <img src="./img/gallery/1.png" id="current" />
+          <h3>N.K-styling</h3>
         </div>
         <div class="imgs">
           <img src="./img/gallery/1.png" />
@@ -65,31 +84,56 @@
             Asiri-Zion 11 <br />
             Petah-Tikva, Israel
           </div>
-          <div><i class="fas fa-phone-alt"></i>+972-546888735</div>
+          <div>
+            <a href="https://wa.me/972526163153" target="”_blank”"
+              ><i class="fab fa-whatsapp"></i></a
+            >+972-546888735
+          </div>
           <div><i class="far fa-envelope"></i>Noykim@gmail.com</div>
           <div class="sci">
             <ul>
               <li>
-                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100000288527482"
+                  target="_blank"
+                  ><i class="fab fa-facebook-square"></i
+                ></a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.instagram.com/noy_kimelman/"
+                  target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
               </li>
               <li>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a
+                  href="https://www.pinterest.com/noykimelman/_created/"
+                  target="_blank"
+                  ><i class="fab fa-pinterest-p"></i
+                ></a>
               </li>
               <li>
                 <a href="#"><i class="fab fa-twitter"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fab fa-tiktok"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                <a
+                  href="https://www.tiktok.com/@noy.kimelman?is_copy_url=1&is_from_webapp=v1&item_id=6817718141259369733"
+                  target="_blank"
+                  ><i class="fab fa-tiktok"></i
+                ></a>
               </li>
             </ul>
           </div>
         </div>
         <div class="contact-form">
           <h2>Contact Us</h2>
-          <form action="" class="form" method="post">
+          <form
+            action="https://formsubmit.co/uriellevy4892@gmail.com"
+            class="form"
+            method="POST"
+          >
             <input
               type="text"
               class="text-box"
@@ -102,6 +146,11 @@
               placeholder="Your Email"
               required
             />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://yourdomain.co/thanks.html"
+            />
             <textarea
               name="message"
               rows="5"
@@ -113,6 +162,12 @@
         </div>
       </div>
     </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p class="copyright">copyright &copy; 2021, All rights reserved</p>
+      <p class="copyright">Made by Uriel Levy</p>
+    </footer>
 
     <script src="/script.js"></script>
   </body>
