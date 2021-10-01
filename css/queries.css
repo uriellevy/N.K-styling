@@ -8,6 +8,11 @@
     justify-content: center;
     align-items: center;
   }
+
+  .header .header-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 20rem auto 5rem;
+  }
 }
 
 /* contact */
