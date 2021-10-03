@@ -205,6 +205,130 @@ nav.active .icon .line2 {
 }
 
 /* ************** */
+/* slider */
+/* ************** */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#slider {
+  font-family: "Roboto", sans-serif;
+  background: #333;
+  color: #fff;
+  line-height: 1.6;
+  position: relative;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+.slide .content {
+  position: absolute;
+  bottom: 70px;
+  left: -600px;
+  opacity: 0;
+  width: 600px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  padding: 35px;
+}
+
+.slide .content h1 {
+  margin-bottom: 10px;
+}
+
+.slide.current .content {
+  opacity: 1;
+  transform: translateX(600px);
+  transition: all 0.7s ease-in-out 0.3s;
+}
+
+#next {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  z-index: 1;
+}
+
+#prev {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  z-index: 1;
+}
+
+.buttons button {
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 13px 15px;
+  outline: none;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.buttons button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.slide:first-child {
+  background: url("/img/img2/2.jpg") no-repeat center center/cover;
+}
+.slide:nth-child(2) {
+  background: url("/img/img2/3.jpg") no-repeat center top/cover;
+}
+.slide:nth-child(3) {
+  background: url("/img/img2/4.jpg") no-repeat center top/cover;
+}
+.slide:nth-child(4) {
+  background: url("/img/img2/6.jpg") no-repeat center top/cover;
+}
+.slide:nth-child(5) {
+  background: url("/img/img2/7.jpg") no-repeat center top/cover;
+}
+.slide:nth-child(6) {
+  background: url("/img/img2/filip-mroz-zK049OFP4uI-unsplash.jpg") no-repeat
+    center top/cover;
+}
+
+@media (max-width: 700px) {
+  .slide .content {
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+  }
+
+  .slide.current .content {
+    transform: translateY(-300px);
+  }
+}
+
+/* ************** */
 /* ABOUT */
 /* ************** */
 
@@ -215,7 +339,7 @@ nav.active .icon .line2 {
     fixed;
   position: relative;
   padding: 6rem 0 4rem;
-  margin: 2rem 0;
+  margin: 2rem 0 0;
   height: 80vh;
 }
 
@@ -259,7 +383,7 @@ nav.active .icon .line2 {
 /* ************** */
 
 #gallery {
-  margin: 2rem 0;
+  margin: 0 0 2rem 0;
   padding: 0;
   background: url("/img/header/background-3.jfif") no-repeat center center/cover
     fixed;
@@ -320,7 +444,7 @@ nav.active .icon .line2 {
 /* CONTACT */
 /* ************** */
 #contact {
-  background: url("/img/header/header-2.jpg") no-repeat center center/cover
+  background: url("/img/header/background-3.jfif") no-repeat center center/cover
     fixed;
   min-height: 100vh;
   display: flex;
