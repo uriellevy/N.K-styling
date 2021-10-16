@@ -1,4 +1,9 @@
 /* mobile */
+@media (max-width: 440px) {
+  nav {
+    right: 1rem;
+  }
+}
 @media (max-width: 540px) {
   .logo {
     display: none;
@@ -12,6 +17,13 @@
   .header .header-content {
     background-color: rgba(0, 0, 0, 0.5);
     margin: 20rem auto 5rem;
+  }
+
+  /* contact */
+  .contact-info {
+    padding-left: 2rem;
+
+    width: 100%;
   }
 }
 
