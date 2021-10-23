@@ -4,14 +4,24 @@
     right: 1rem;
   }
 }
+
 @media (max-width: 540px) {
   .logo {
     display: none;
   }
 
+  /* IOS ADJUSTMENTS */
+
   .header {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)),
-      url(/img/header/header-query.jpg) no-repeat center center/cover fixed;
+      url(/img/header/header-query.jpg);
+    background-position: center;
+    background-attachment: scroll;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
   }
@@ -21,7 +31,55 @@
     margin: 20rem auto 5rem;
   }
 
+  #about {
+    background-image: url("/img/header/background-3.jfif");
+    background-position: center;
+    background-attachment: scroll;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #gallery {
+    background-image: url("/img/header/background-3.jfif");
+    background-position: center;
+    background-attachment: scroll;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #activities {
+    background-image: url("/img/header/background-3.jfif");
+    background-position: center;
+    background-attachment: scroll;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
   /* contact */
+  #contact {
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url(/img/header/contact.jpg);
+    background-position: center;
+    background-attachment: scroll;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   .contact-info {
     padding-left: 2rem;
     width: 100%;
