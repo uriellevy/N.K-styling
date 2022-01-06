@@ -87,6 +87,8 @@ p {
   position: fixed;
   top: 0;
   transition: 0.5s ease;
+  display: flex;
+  text-align: center;
 }
 
 .full-nav.sticky {
@@ -97,13 +99,12 @@ p {
 }
 
 .logo {
-  font-size: 2.4rem;
-  color: #fff;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 1rem;
-  font-style: italic;
+  background: url("../img/logo/NK\ Styling-logos_white.png") no-repeat center
+    center/cover;
+  padding: 0 9rem 0 10rem !important;
+  line-height: 8rem;
+  font-size: 4rem;
+  margin-left: 2rem;
 }
 
 nav {
