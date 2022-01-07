@@ -181,6 +181,9 @@ nav ul a {
   left: 5px;
   transition: transform 0.6s linear;
 }
+.icon .line:active {
+  border: none;
+}
 
 .icon .line2 {
   top: auto;
